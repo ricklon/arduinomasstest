@@ -6,12 +6,12 @@ RUN apt-get update && apt-get install -y \
     git \
     wget \
     curl \
-	  openjdk-8-jre \
-	  xvfb \
+    openjdk-8-jre \
+    xvfb \
     xz-utils\
     execstack \
-	&& apt-get clean \
-	&& rm -rf /var/lib/apt/lists/*
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN cd /lib/x86_64-linux-gnu \
       && ln -s libc.so.6 libc.so
